@@ -7,6 +7,10 @@ import org.junit.Test;
 public class FizzBuzzTest {
 
 	public String fizzBuzz(int number){
+		if(number%15==0)
+			return "fizzbuzz";
+		if(number%5==0)
+			return "buzz";
 		if(number%3==0)
 			return "fizz";
 		return "";
@@ -30,5 +34,15 @@ public class FizzBuzzTest {
 	@Test
 	public void returnNothingWith4() {
 		assertEquals("Not the expected response", "", fizzBuzz(4));
+	}
+
+	@Test
+	public void returnBuzzWith5() {
+		assertEquals("Not the expected response", "buzz", fizzBuzz(5));
+	}
+
+	@Test
+	public void returnFizzBuzzWith15() {
+		assertEquals("Not the expected response", "fizzbuzz", fizzBuzz(15));
 	}
 }
