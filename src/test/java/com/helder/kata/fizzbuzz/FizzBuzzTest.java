@@ -45,4 +45,23 @@ public class FizzBuzzTest {
 	public void returnFizzBuzzWith15() {
 		assertEquals("Not the expected response", "fizzbuzz", fizzBuzz(15));
 	}
+
+	@Test
+	public void returnFizzWithMultiplesOf3() {
+		assertEquals("Not the expected response", "fizz", fizzBuzz(3));
+		assertEquals("Not the expected response", "fizz", fizzBuzz(6));
+		assertEquals("Not the expected response", "fizz", fizzBuzz(9));
+	}
+	@Test
+	public void returnBuzzWithMultiplesOf5() {
+		assertEquals("Not the expected response", "buzz", fizzBuzz(5));
+		assertEquals("Not the expected response", "buzz", fizzBuzz(10));
+		assertEquals("Not the expected response", "buzz", fizzBuzz(20));
+	}
+	@Test
+	public void returnFizzBuzzWithMultiplesOf15() {
+		assertEquals("Not the expected response", "fizzbuzz", fizzBuzz(15));
+		assertEquals("Not the expected response", "fizzbuzz", fizzBuzz(30));
+		assertEquals("Not the expected response", "fizzbuzz", fizzBuzz(45));
+	}
 }
