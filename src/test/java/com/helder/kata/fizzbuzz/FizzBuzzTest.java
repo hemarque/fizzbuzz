@@ -14,4 +14,9 @@ public class FizzBuzzTest {
 	public void returnNothingWith1() {
 		assertEquals("Not the expected response", "", fizzBuzz(1));
 	}
+
+	@Test
+	public void returnNothingWith2() {
+		assertEquals("Not the expected response", "", fizzBuzz(2));
+	}
 }
